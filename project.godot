@@ -16,3 +16,5 @@ config/features=PackedStringArray("4.3")
 [rendering]
 
 textures/vram_compression/import_etc2_astc=true
+limits/global_shader_variables/buffer_size=4096
+limits/global_shader_variables/buffer_size.web=1024
