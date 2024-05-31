@@ -341,3 +341,9 @@ texture = ExtResource("3_2bv66")
 [node name="Sample4" type="Sprite2D" parent="ParallaxBackground/ParallaxLayer"]
 position = Vector2(1376, 764.5)
 texture = ExtResource("3_2bv66")
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="Sample" type="Sprite2D" parent="CanvasLayer"]
+position = Vector2(489, 302)
+texture = ExtResource("3_2bv66")
