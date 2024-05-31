@@ -1,7 +1,8 @@
-[gd_scene load_steps=8 format=3 uid="uid://bibmqp5jtad41"]
+[gd_scene load_steps=9 format=3 uid="uid://bibmqp5jtad41"]
 
 [ext_resource type="Script" path="res://main.gd" id="1_aqgf7"]
 [ext_resource type="Texture2D" uid="uid://iila1ydtiij0" path="res://tiles_sheet.png" id="2_p3tg5"]
+[ext_resource type="Texture2D" uid="uid://db1p4x0uqhc00" path="res://Sample.png" id="3_2bv66"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_r36xt"]
 texture = ExtResource("2_p3tg5")
@@ -316,3 +317,24 @@ libraries = {
 "": SubResource("AnimationLibrary_ald04")
 }
 autoplay = "camera"
+
+[node name="ParallaxBackground" type="ParallaxBackground" parent="."]
+
+[node name="ParallaxLayer" type="ParallaxLayer" parent="ParallaxBackground"]
+motion_scale = Vector2(0.05, 0.05)
+
+[node name="Sample" type="Sprite2D" parent="ParallaxBackground/ParallaxLayer"]
+position = Vector2(459, 259)
+texture = ExtResource("3_2bv66")
+
+[node name="Sample2" type="Sprite2D" parent="ParallaxBackground/ParallaxLayer"]
+position = Vector2(1376, 259)
+texture = ExtResource("3_2bv66")
+
+[node name="Sample3" type="Sprite2D" parent="ParallaxBackground/ParallaxLayer"]
+position = Vector2(459, 764.5)
+texture = ExtResource("3_2bv66")
+
+[node name="Sample4" type="Sprite2D" parent="ParallaxBackground/ParallaxLayer"]
+position = Vector2(1376, 764.5)
+texture = ExtResource("3_2bv66")
