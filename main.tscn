@@ -1,4 +1,4 @@
-[gd_scene load_steps=9 format=3 uid="uid://bibmqp5jtad41"]
+[gd_scene load_steps=11 format=3 uid="uid://bibmqp5jtad41"]
 
 [ext_resource type="Script" path="res://main.gd" id="1_aqgf7"]
 [ext_resource type="Texture2D" uid="uid://iila1ydtiij0" path="res://tiles_sheet.png" id="2_p3tg5"]
@@ -203,6 +203,15 @@ _data = {
 "camera": SubResource("Animation_n05c3")
 }
 
+[sub_resource type="Gradient" id="Gradient_reese"]
+colors = PackedColorArray(1, 1, 1, 1, 0, 0, 0, 1)
+
+[sub_resource type="GradientTexture2D" id="GradientTexture2D_8roa3"]
+gradient = SubResource("Gradient_reese")
+fill = 1
+fill_from = Vector2(0.5, 0.513761)
+fill_to = Vector2(0.513761, 1)
+
 [node name="Main" type="Node2D"]
 script = ExtResource("1_aqgf7")
 
@@ -347,3 +356,369 @@ texture = ExtResource("3_2bv66")
 [node name="Sample" type="Sprite2D" parent="CanvasLayer"]
 position = Vector2(489, 302)
 texture = ExtResource("3_2bv66")
+
+[node name="Lights" type="Node2D" parent="."]
+position = Vector2(12278, 119)
+
+[node name="Node2D5" type="Node2D" parent="Lights"]
+position = Vector2(-12218, -65)
+
+[node name="PointLight2D" type="PointLight2D" parent="Lights/Node2D5"]
+texture = SubResource("GradientTexture2D_8roa3")
+texture_scale = 5.0
+
+[node name="PointLight2D2" type="PointLight2D" parent="Lights/Node2D5"]
+position = Vector2(225, 0)
+texture = SubResource("GradientTexture2D_8roa3")
+texture_scale = 5.0
+
+[node name="PointLight2D3" type="PointLight2D" parent="Lights/Node2D5"]
+position = Vector2(402, 0)
+texture = SubResource("GradientTexture2D_8roa3")
+texture_scale = 5.0
+
+[node name="PointLight2D4" type="PointLight2D" parent="Lights/Node2D5"]
+position = Vector2(591, 0)
+texture = SubResource("GradientTexture2D_8roa3")
+texture_scale = 5.0
+
+[node name="PointLight2D5" type="PointLight2D" parent="Lights/Node2D5"]
+position = Vector2(797, 0)
+texture = SubResource("GradientTexture2D_8roa3")
+texture_scale = 5.0
+
+[node name="PointLight2D6" type="PointLight2D" parent="Lights/Node2D5"]
+position = Vector2(1020, 0)
+texture = SubResource("GradientTexture2D_8roa3")
+texture_scale = 5.0
+
+[node name="PointLight2D7" type="PointLight2D" parent="Lights/Node2D5"]
+position = Vector2(1245, 0)
+texture = SubResource("GradientTexture2D_8roa3")
+texture_scale = 5.0
+
+[node name="PointLight2D8" type="PointLight2D" parent="Lights/Node2D5"]
+position = Vector2(1413, 0)
+texture = SubResource("GradientTexture2D_8roa3")
+texture_scale = 5.0
+
+[node name="PointLight2D9" type="PointLight2D" parent="Lights/Node2D5"]
+position = Vector2(1615, 0)
+texture = SubResource("GradientTexture2D_8roa3")
+texture_scale = 5.0
+
+[node name="PointLight2D10" type="PointLight2D" parent="Lights/Node2D5"]
+position = Vector2(1830, 0)
+texture = SubResource("GradientTexture2D_8roa3")
+texture_scale = 5.0
+
+[node name="Node2D6" type="Node2D" parent="Lights"]
+position = Vector2(-10160, -61)
+
+[node name="PointLight2D" type="PointLight2D" parent="Lights/Node2D6"]
+texture = SubResource("GradientTexture2D_8roa3")
+texture_scale = 5.0
+
+[node name="PointLight2D2" type="PointLight2D" parent="Lights/Node2D6"]
+position = Vector2(225, 0)
+texture = SubResource("GradientTexture2D_8roa3")
+texture_scale = 5.0
+
+[node name="PointLight2D3" type="PointLight2D" parent="Lights/Node2D6"]
+position = Vector2(402, 0)
+texture = SubResource("GradientTexture2D_8roa3")
+texture_scale = 5.0
+
+[node name="PointLight2D4" type="PointLight2D" parent="Lights/Node2D6"]
+position = Vector2(591, 0)
+texture = SubResource("GradientTexture2D_8roa3")
+texture_scale = 5.0
+
+[node name="PointLight2D5" type="PointLight2D" parent="Lights/Node2D6"]
+position = Vector2(797, 0)
+texture = SubResource("GradientTexture2D_8roa3")
+texture_scale = 5.0
+
+[node name="PointLight2D6" type="PointLight2D" parent="Lights/Node2D6"]
+position = Vector2(1020, 0)
+texture = SubResource("GradientTexture2D_8roa3")
+texture_scale = 5.0
+
+[node name="PointLight2D7" type="PointLight2D" parent="Lights/Node2D6"]
+position = Vector2(1245, 0)
+texture = SubResource("GradientTexture2D_8roa3")
+texture_scale = 5.0
+
+[node name="PointLight2D8" type="PointLight2D" parent="Lights/Node2D6"]
+position = Vector2(1413, 0)
+texture = SubResource("GradientTexture2D_8roa3")
+texture_scale = 5.0
+
+[node name="PointLight2D9" type="PointLight2D" parent="Lights/Node2D6"]
+position = Vector2(1615, 0)
+texture = SubResource("GradientTexture2D_8roa3")
+texture_scale = 5.0
+
+[node name="PointLight2D10" type="PointLight2D" parent="Lights/Node2D6"]
+position = Vector2(1830, 0)
+texture = SubResource("GradientTexture2D_8roa3")
+texture_scale = 5.0
+
+[node name="Node2D7" type="Node2D" parent="Lights"]
+position = Vector2(-8284, -40)
+
+[node name="PointLight2D" type="PointLight2D" parent="Lights/Node2D7"]
+texture = SubResource("GradientTexture2D_8roa3")
+texture_scale = 5.0
+
+[node name="PointLight2D2" type="PointLight2D" parent="Lights/Node2D7"]
+position = Vector2(225, 0)
+texture = SubResource("GradientTexture2D_8roa3")
+texture_scale = 5.0
+
+[node name="PointLight2D3" type="PointLight2D" parent="Lights/Node2D7"]
+position = Vector2(402, 0)
+texture = SubResource("GradientTexture2D_8roa3")
+texture_scale = 5.0
+
+[node name="PointLight2D4" type="PointLight2D" parent="Lights/Node2D7"]
+position = Vector2(591, 0)
+texture = SubResource("GradientTexture2D_8roa3")
+texture_scale = 5.0
+
+[node name="PointLight2D5" type="PointLight2D" parent="Lights/Node2D7"]
+position = Vector2(797, 0)
+texture = SubResource("GradientTexture2D_8roa3")
+texture_scale = 5.0
+
+[node name="PointLight2D6" type="PointLight2D" parent="Lights/Node2D7"]
+position = Vector2(1020, 0)
+texture = SubResource("GradientTexture2D_8roa3")
+texture_scale = 5.0
+
+[node name="PointLight2D7" type="PointLight2D" parent="Lights/Node2D7"]
+position = Vector2(1245, 0)
+texture = SubResource("GradientTexture2D_8roa3")
+texture_scale = 5.0
+
+[node name="PointLight2D8" type="PointLight2D" parent="Lights/Node2D7"]
+position = Vector2(1413, 0)
+texture = SubResource("GradientTexture2D_8roa3")
+texture_scale = 5.0
+
+[node name="PointLight2D9" type="PointLight2D" parent="Lights/Node2D7"]
+position = Vector2(1615, 0)
+texture = SubResource("GradientTexture2D_8roa3")
+texture_scale = 5.0
+
+[node name="PointLight2D10" type="PointLight2D" parent="Lights/Node2D7"]
+position = Vector2(1830, 0)
+texture = SubResource("GradientTexture2D_8roa3")
+texture_scale = 5.0
+
+[node name="Node2D8" type="Node2D" parent="Lights"]
+position = Vector2(-6234, -21)
+
+[node name="PointLight2D" type="PointLight2D" parent="Lights/Node2D8"]
+texture = SubResource("GradientTexture2D_8roa3")
+texture_scale = 5.0
+
+[node name="PointLight2D2" type="PointLight2D" parent="Lights/Node2D8"]
+position = Vector2(225, 0)
+texture = SubResource("GradientTexture2D_8roa3")
+texture_scale = 5.0
+
+[node name="PointLight2D3" type="PointLight2D" parent="Lights/Node2D8"]
+position = Vector2(402, 0)
+texture = SubResource("GradientTexture2D_8roa3")
+texture_scale = 5.0
+
+[node name="PointLight2D4" type="PointLight2D" parent="Lights/Node2D8"]
+position = Vector2(591, 0)
+texture = SubResource("GradientTexture2D_8roa3")
+texture_scale = 5.0
+
+[node name="PointLight2D5" type="PointLight2D" parent="Lights/Node2D8"]
+position = Vector2(797, 0)
+texture = SubResource("GradientTexture2D_8roa3")
+texture_scale = 5.0
+
+[node name="PointLight2D6" type="PointLight2D" parent="Lights/Node2D8"]
+position = Vector2(1020, 0)
+texture = SubResource("GradientTexture2D_8roa3")
+texture_scale = 5.0
+
+[node name="PointLight2D7" type="PointLight2D" parent="Lights/Node2D8"]
+position = Vector2(1245, 0)
+texture = SubResource("GradientTexture2D_8roa3")
+texture_scale = 5.0
+
+[node name="PointLight2D8" type="PointLight2D" parent="Lights/Node2D8"]
+position = Vector2(1413, 0)
+texture = SubResource("GradientTexture2D_8roa3")
+texture_scale = 5.0
+
+[node name="PointLight2D9" type="PointLight2D" parent="Lights/Node2D8"]
+position = Vector2(1615, 0)
+texture = SubResource("GradientTexture2D_8roa3")
+texture_scale = 5.0
+
+[node name="PointLight2D10" type="PointLight2D" parent="Lights/Node2D8"]
+position = Vector2(1830, 0)
+texture = SubResource("GradientTexture2D_8roa3")
+texture_scale = 5.0
+
+[node name="Node2D9" type="Node2D" parent="Lights"]
+position = Vector2(-4150, -21)
+
+[node name="PointLight2D" type="PointLight2D" parent="Lights/Node2D9"]
+texture = SubResource("GradientTexture2D_8roa3")
+texture_scale = 5.0
+
+[node name="PointLight2D2" type="PointLight2D" parent="Lights/Node2D9"]
+position = Vector2(225, 0)
+texture = SubResource("GradientTexture2D_8roa3")
+texture_scale = 5.0
+
+[node name="PointLight2D3" type="PointLight2D" parent="Lights/Node2D9"]
+position = Vector2(402, 0)
+texture = SubResource("GradientTexture2D_8roa3")
+texture_scale = 5.0
+
+[node name="PointLight2D4" type="PointLight2D" parent="Lights/Node2D9"]
+position = Vector2(591, 0)
+texture = SubResource("GradientTexture2D_8roa3")
+texture_scale = 5.0
+
+[node name="PointLight2D5" type="PointLight2D" parent="Lights/Node2D9"]
+position = Vector2(797, 0)
+texture = SubResource("GradientTexture2D_8roa3")
+texture_scale = 5.0
+
+[node name="PointLight2D6" type="PointLight2D" parent="Lights/Node2D9"]
+position = Vector2(1020, 0)
+texture = SubResource("GradientTexture2D_8roa3")
+texture_scale = 5.0
+
+[node name="PointLight2D7" type="PointLight2D" parent="Lights/Node2D9"]
+position = Vector2(1245, 0)
+texture = SubResource("GradientTexture2D_8roa3")
+texture_scale = 5.0
+
+[node name="PointLight2D8" type="PointLight2D" parent="Lights/Node2D9"]
+position = Vector2(1413, 0)
+texture = SubResource("GradientTexture2D_8roa3")
+texture_scale = 5.0
+
+[node name="PointLight2D9" type="PointLight2D" parent="Lights/Node2D9"]
+position = Vector2(1615, 0)
+texture = SubResource("GradientTexture2D_8roa3")
+texture_scale = 5.0
+
+[node name="PointLight2D10" type="PointLight2D" parent="Lights/Node2D9"]
+position = Vector2(1830, 0)
+texture = SubResource("GradientTexture2D_8roa3")
+texture_scale = 5.0
+
+[node name="Node2D10" type="Node2D" parent="Lights"]
+position = Vector2(-2079, -13)
+
+[node name="PointLight2D" type="PointLight2D" parent="Lights/Node2D10"]
+texture = SubResource("GradientTexture2D_8roa3")
+texture_scale = 5.0
+
+[node name="PointLight2D2" type="PointLight2D" parent="Lights/Node2D10"]
+position = Vector2(225, 0)
+texture = SubResource("GradientTexture2D_8roa3")
+texture_scale = 5.0
+
+[node name="PointLight2D3" type="PointLight2D" parent="Lights/Node2D10"]
+position = Vector2(402, 0)
+texture = SubResource("GradientTexture2D_8roa3")
+texture_scale = 5.0
+
+[node name="PointLight2D4" type="PointLight2D" parent="Lights/Node2D10"]
+position = Vector2(591, 0)
+texture = SubResource("GradientTexture2D_8roa3")
+texture_scale = 5.0
+
+[node name="PointLight2D5" type="PointLight2D" parent="Lights/Node2D10"]
+position = Vector2(797, 0)
+texture = SubResource("GradientTexture2D_8roa3")
+texture_scale = 5.0
+
+[node name="PointLight2D6" type="PointLight2D" parent="Lights/Node2D10"]
+position = Vector2(1020, 0)
+texture = SubResource("GradientTexture2D_8roa3")
+texture_scale = 5.0
+
+[node name="PointLight2D7" type="PointLight2D" parent="Lights/Node2D10"]
+position = Vector2(1245, 0)
+texture = SubResource("GradientTexture2D_8roa3")
+texture_scale = 5.0
+
+[node name="PointLight2D8" type="PointLight2D" parent="Lights/Node2D10"]
+position = Vector2(1413, 0)
+texture = SubResource("GradientTexture2D_8roa3")
+texture_scale = 5.0
+
+[node name="PointLight2D9" type="PointLight2D" parent="Lights/Node2D10"]
+position = Vector2(1615, 0)
+texture = SubResource("GradientTexture2D_8roa3")
+texture_scale = 5.0
+
+[node name="PointLight2D10" type="PointLight2D" parent="Lights/Node2D10"]
+position = Vector2(1830, 0)
+texture = SubResource("GradientTexture2D_8roa3")
+texture_scale = 5.0
+
+[node name="Node2D11" type="Node2D" parent="Lights"]
+
+[node name="PointLight2D" type="PointLight2D" parent="Lights/Node2D11"]
+texture = SubResource("GradientTexture2D_8roa3")
+texture_scale = 5.0
+
+[node name="PointLight2D2" type="PointLight2D" parent="Lights/Node2D11"]
+position = Vector2(225, 0)
+texture = SubResource("GradientTexture2D_8roa3")
+texture_scale = 5.0
+
+[node name="PointLight2D3" type="PointLight2D" parent="Lights/Node2D11"]
+position = Vector2(402, 0)
+texture = SubResource("GradientTexture2D_8roa3")
+texture_scale = 5.0
+
+[node name="PointLight2D4" type="PointLight2D" parent="Lights/Node2D11"]
+position = Vector2(591, 0)
+texture = SubResource("GradientTexture2D_8roa3")
+texture_scale = 5.0
+
+[node name="PointLight2D5" type="PointLight2D" parent="Lights/Node2D11"]
+position = Vector2(797, 0)
+texture = SubResource("GradientTexture2D_8roa3")
+texture_scale = 5.0
+
+[node name="PointLight2D6" type="PointLight2D" parent="Lights/Node2D11"]
+position = Vector2(1020, 0)
+texture = SubResource("GradientTexture2D_8roa3")
+texture_scale = 5.0
+
+[node name="PointLight2D7" type="PointLight2D" parent="Lights/Node2D11"]
+position = Vector2(1245, 0)
+texture = SubResource("GradientTexture2D_8roa3")
+texture_scale = 5.0
+
+[node name="PointLight2D8" type="PointLight2D" parent="Lights/Node2D11"]
+position = Vector2(1413, 0)
+texture = SubResource("GradientTexture2D_8roa3")
+texture_scale = 5.0
+
+[node name="PointLight2D9" type="PointLight2D" parent="Lights/Node2D11"]
+position = Vector2(1615, 0)
+texture = SubResource("GradientTexture2D_8roa3")
+texture_scale = 5.0
+
+[node name="PointLight2D10" type="PointLight2D" parent="Lights/Node2D11"]
+position = Vector2(1830, 0)
+texture = SubResource("GradientTexture2D_8roa3")
+texture_scale = 5.0
